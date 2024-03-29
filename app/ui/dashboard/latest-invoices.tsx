@@ -1,7 +1,7 @@
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { exo_2, lusitana } from '@/app/ui/fonts';
+import { exo_2 } from '@/app/ui/fonts';
 import { LatestInvoice } from '@/app/lib/definitions';
 import { fetchLatestInvoices } from '@/app/lib/data';
 
@@ -46,7 +46,7 @@ export default async function LatestInvoices(){
                   </div>
                 </div>
                 <p
-                  className={`${lusitana.className} truncate text-sm font-medium md:text-base`}
+                  className={`${exo_2.className} truncate text-sm font-medium md:text-base`}
                 >
                   {invoice.amount}
                 </p>
